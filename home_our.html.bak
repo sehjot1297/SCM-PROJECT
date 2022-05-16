@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Categories</title>
+<link rel="icon" type="image/x-icon" href="C:\Users\sahar\Downloads\final logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon7.png" type="image/x-icon">  
+    
+    
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <header>
+
+       
+        <div class="menu-btn" >
+            
+            
+         </div>
+        <div class="nav">
+            <div class="nav-items">
+
+                <a href="login.html">Login</a>
+                <a href="finalhome.html">Home</a>
+                <a href="blog page-1.html">Blog</a>
+                <a href="about us.html">About</a>
+				<a href="contact us.html">Contact Us</a>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="home">
+
+        <video class="video-slide active" src="C:\Users\sahar\Downloads\ezgif.com-gif-maker.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="C:\Users\sahar\Downloads\3c3b84117cda04b53ad4589128ec0270.mov" autoplay muted loop></video>
+        <video class="video-slide" src="C:\Users\sahar\Downloads\RPReplay_Final1641643658.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="C:\Users\sahar\Downloads\ezgif-2-0199df1f8d.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="C:\Users\sahar\Downloads\ink_and_toner (1).mp4" autoplay muted loop></video>
+
+
+
+
+        <div class="content active">
+            <h1>Pens & <br><span>Pencils</span></h1>
+            
+            <a href="pen and markers.html">Explore</a>    
+        </div>
+
+        <div class="content">
+            <h1>Notebooks<br><span></span></h1>
+            
+            <a href="notebook.html">Explore</a> 
+
+        </div>
+
+        
+        <div class="content">
+            <h1>Arts & <br><span>Craft</span></h1>
+           
+            <a href="art and craft.html">Explore</a> 
+
+        </div>
+
+        
+        <div class="content">
+            <h1>Office <br><span>Essential</span></h1>
+            
+            <a href="office essential.html">Explore</a> 
+
+        </div>
+
+        
+        <div class="content">
+            <h1>Ink & <br><span>Toners</span></h1>
+            
+            <a href="ink and toners.html">Explore</a> 
+
+        </div>
+
+
+
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+          </div>
+    </section>
+    
+
+
+
+
+
+   <script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".nav");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+
+
+
+
+     //Javacript for video slider navigation
+     const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function(manual){
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+
+
+        
+    </script>
+    
+
+
+        </body>
+</html>

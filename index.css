@@ -1,0 +1,96 @@
+.container {
+  position: relative;
+  width: 0px;
+}
+
+.image1 {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 15px;
+  width: 200px;
+  height: 175px;
+  margin: 30px 1000px;
+}
+
+.overlay_right {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0px 1000px;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 200px;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay_right {
+  height: 20%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image2 {
+  display: block;
+  width: 200px;
+  height: 250px;
+  margin: -160px 780px;
+  
+}
+
+.image3 {
+  display: block;
+  width: 200px;
+  height: 250px;
+  margin: 70px 1000px;
+}
+
+.image4 {
+  display: block;
+  width: 200px;
+  height: 250px;
+  margin: -200px 780px;
+}
+
+.image5 {
+  display: block;
+  width: 200px;
+  height: 250px;
+  margin: 110px 1000px;
+}
+
+.image6 {
+display: block;
+  width: 200px;
+  height: 250px;
+  margin: -240px 780px;
+}
+
+.overlay_left{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0px 780px;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 200px;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay_left {
+  height: 20%;
+}
